@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarinePress", "MarinePress\MarinePress.csproj", "{DDE2F164-2DA9-47D9-B103-61CF088316B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarinePressCL", "MarinePressCL\MarinePressCL.csproj", "{82C8813C-243E-468D-8BAB-27E964480C36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDE2F164-2DA9-47D9-B103-61CF088316B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE2F164-2DA9-47D9-B103-61CF088316B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE2F164-2DA9-47D9-B103-61CF088316B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE2F164-2DA9-47D9-B103-61CF088316B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C8813C-243E-468D-8BAB-27E964480C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C8813C-243E-468D-8BAB-27E964480C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C8813C-243E-468D-8BAB-27E964480C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C8813C-243E-468D-8BAB-27E964480C36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F27ADE0-2D45-490B-ABB8-ABCA37F4A580}
+	EndGlobalSection
+EndGlobal
