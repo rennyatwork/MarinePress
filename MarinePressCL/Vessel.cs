@@ -52,7 +52,7 @@ namespace MarinePressCL
         /// Velocity/hour
         /// </summary>
         /// <returns></returns>
-        public decimal AverageSpeed()
+        public decimal CalculateAverageSpeed()
         {
             if (this.ListPositions == null || this.ListPositions.Count == 1)
             {
@@ -61,10 +61,14 @@ namespace MarinePressCL
 
             TimeSpan totalTime = this.ListPositions.Last<Position>().TimeStamp.Subtract(this.ListPositions.First<Position>().TimeStamp);
 
-            return TotalDistance() / totalTime.Hours;
+            return CalculateTotalDistance() / totalTime.Hours;
         }
 
-        public decimal TotalDistance()
+        /// <summary>
+        /// Calculates totalDistance
+        /// </summary>
+        /// <returns></returns>
+        public decimal CalculateTotalDistance()
         {
             if (this.ListPositions == null || this.ListPositions.Count == 1)
             {
@@ -81,6 +85,16 @@ namespace MarinePressCL
             return (decimal)totalDistance;
         }
 
+        /// <summary>
+        /// Returns the position immediately before the intersection
+        /// </summary>
+        /// <param name="intersectionPoint"></param>
+        /// <returns></returns>
+        public Position GetFirstPositionBeforeIntersection(Position intersectionPoint)
+        {
+            int posBeforeIntersection = this.listPositions.FindLastIndex(x => x.TimeStamp.CompareTo(intersectionPoint.TimeStamp) <= 0);
+            return (this.listPositions[posBeforeIntersection]);
+        }
 
         /// <summary>
         /// Initializes a vessel with sample data 1

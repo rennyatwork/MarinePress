@@ -11,8 +11,9 @@ namespace MarinePressCL
     /// </summary>
     public class Intersection
     {
-        public string VesselName1 { get; set; }
-        public string VesselName2 { get; set; }
-        Position IntersectionPosition { get; set; } 
+        public Vessel Vessel1 { get; set; }
+        public Vessel Vessel2 { get; set; }
+        public Position IntersectionPosition { get; set; } 
+        public bool WarningIssued { get; set; }
     }
 }
